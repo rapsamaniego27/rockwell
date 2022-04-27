@@ -16,12 +16,12 @@ class Letter {
 
     }); */
 
-    document.querySelector(".hug").addEventListener("submit", handleSubmit);
+    document.querySelector(".formHug").addEventListener("submit", handleSubmit);
 
     const handleSubmit = (e) => {
       e.preventDefault();
       this.modalHugOverlay.classList.remove('modal--hide');
-      let myForm = document.getElementById(".hug");
+      let myForm = document.getElementById(".formHug");
       let formData = new FormData(myForm);
       fetch("/", {
         method: "POST",
