@@ -17,7 +17,7 @@ class Password {
    const successClass = 'modal-form__success--show';
    const messageSpan = document.querySelector('#formMessage');
    /* Span Messages */
-   const messageSuccess = 'Galing mo Rockwell! <br> Redirect ko lang ...';
+   const messageSuccess = 'Galing mo! <br> Redirect ko lang ...';
    const messageError = 'Mali password mo rockwell!';
    
 
