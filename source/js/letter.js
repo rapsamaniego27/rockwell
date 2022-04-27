@@ -21,6 +21,7 @@ class Letter {
       this.modalHugOverlay.classList.remove('modal--hide');
       let myForm = document.getElementById(".formHug");
       let formData = new FormData(myForm);
+      console.log(formData);
       fetch("/", {
         method: "POST",
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
