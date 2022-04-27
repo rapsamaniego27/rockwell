@@ -20,7 +20,7 @@ class Letter {
 
     const handleSubmit = (e) => {
       e.preventDefault();
-      this.modalHugOverlay.classList.remove('modal--hide');
+
       let myForm = document.getElementById(".formHug");
       let formData = new FormData(myForm);
       fetch("/", {
