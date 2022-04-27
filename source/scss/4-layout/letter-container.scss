@@ -1,0 +1,30 @@
+.letter-container{
+  max-width: 1020px;
+  height:auto;
+  margin: 50px auto;
+  display:flex;
+  justify-content:center;
+  flex-direction:column;
+  
+  .letter{
+    max-width:860px;
+    margin:0 auto;
+    background:$white;
+
+   @media #{$device-md} {
+     max-width:90vw;
+     margin: 0 auto;
+   }
+
+    @media #{$device-sm} {
+      width: 100%;
+      margin: 0 auto;
+    }
+    
+  }
+
+ @media #{$device-md} {
+   margin: 15px auto;
+ }
+}             
+

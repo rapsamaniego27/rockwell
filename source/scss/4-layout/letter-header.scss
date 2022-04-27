@@ -1,0 +1,43 @@
+.letter-header {
+  background: $primary;
+  height: 80px;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+
+  .letter-header__title{
+    color:$white;
+
+    @media #{$device-sm} {
+      font-size: 1.25rem;
+    }
+  }
+
+  .letter-header__date-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    .letter-header__date {
+      color: $white;
+      text-align: right;
+
+      @media #{$device-sm} {
+      font-size: 0.75rem;
+      }
+    }
+
+    .letter-header__time {
+      color: $white;
+      text-align: right;
+
+      @media #{$device-sm} {
+      font-size: 0.75rem;
+      }
+    }
+
+
+  }
+}

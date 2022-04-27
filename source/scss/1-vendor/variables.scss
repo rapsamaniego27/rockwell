@@ -1,0 +1,52 @@
+// Colors
+
+$primary: #ED6E84;
+$accent: #F3B550;
+
+// Semantics
+$success: #60AF46;
+$danger:  #960200;
+$warning:  #EDA921;
+$info:  #0074D9;
+
+// Gray Scale
+$white:  #fff;
+$silver: #ddd;
+$gray:   #aaa;
+$dark: #333;
+$black:  #111;
+
+$light: #fff;
+$green: green;
+
+
+// Font Weights
+
+$light: 300;
+$normal: 400;
+$semibold: 500;
+$bold: 700;
+
+//Fonts
+
+@import url('https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,400;0,700;1,400&family=Crimson+Text:ital,wght@0,400;0,600;1,400&family=Great+Vibes&display=swap');
+
+$sans-serif: 'Chivo', sans-serif;
+$serif: 'Crimson Text', serif;
+$mono: "Source Code Pro", Courier, mono;
+$script: 'Great Vibes', cursive;
+
+//Media queries
+// Note: 
+// Max <   Min >
+
+// $device-lg: "only screen and (min-width: 1366px)";
+$device-lg: "only screen and (max-width: 1366px)";
+$device-md-between: "(min-width: 768px) and (max-width: 979px)";
+$device-md: "only screen and (max-width: 1024px)";
+$device-sm: "only screen and (max-width: 767px)";
+$device-xs: "only screen and (max-width: 480px)";
+
+.pink{
+  background:pink;
+}

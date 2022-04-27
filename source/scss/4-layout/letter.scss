@@ -1,0 +1,82 @@
+.letter{
+
+  .girl-parent{
+    justify-content:center;
+    align-items:center;
+  }
+
+  .girl-img__container{
+    position:relative;
+    width:204px;
+    height:204px;
+    border-radius:50%;
+    background:$primary;
+    overflow:hidden;
+    box-shadow: 0 8px 6px -6px black;
+    margin:0 auto;
+    
+
+    @media #{$device-sm} {
+       width:180px;
+       height:180px;
+    }
+  }
+
+  .girl-img{
+    width:100%;
+    height:auto;
+    object-fit:cover;
+  }
+
+  .girl-intro{
+    margin: 30px 20px 0 20px;
+  }
+
+  .girl-content-paragraph{
+    padding:30px 45px 0 45px;
+
+    @media #{$device-md} {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
+
+  .girl-content-end{
+    margin-right: 25px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+  }
+  .girl-close{
+    text-align:right;
+  }
+
+  .girl-close__signature{
+    text-align:right;
+    display:block;
+    font-family:$script;
+    font-size:2.4375rem;
+    color:$primary;
+    padding-top:5px;
+
+    @media #{$device-sm} {
+      padding-left: 30px;
+      font-size: 2rem;
+    }
+  }
+
+  .btn-letter{
+    margin: 0 auto;
+  }
+
+  .btn-letter__container{
+    width:100%;
+    display:flex;
+    justify-content:center;
+    
+  }
+
+}
+
+.letter--blur{
+   filter:blur(3px);
+}
