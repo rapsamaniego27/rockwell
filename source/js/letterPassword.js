@@ -49,6 +49,18 @@ class Password {
       const modal = document.querySelector('#modalFormOverlay');
       modal.classList.add('modal--hide');
 
+
+      //Handles submit
+     let myForm = document.getElementById("form");
+     let formData = new FormData(myForm);
+  
+      fetch("/", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: new URLSearchParams(formData).toString(),
+      })
+        .then(() => console.log("Form successfully submitted"))
+        .catch((error) => alert(error));
       
     }, 2000);
     
@@ -70,17 +82,7 @@ class Password {
       e.preventDefault();
      this.validatePassword();
 
-     //Handles submit
-     let myForm = document.getElementById("form");
-     let formData = new FormData(myForm);
-  
-      fetch("/", {
-        method: "POST",
-        headers: { "Content-Type": "application/x-www-form-urlencoded" },
-        body: new URLSearchParams(formData).toString(),
-      })
-        .then(() => console.log("Form successfully submitted"))
-        .catch((error) => alert(error));
+     
           
     });
 
