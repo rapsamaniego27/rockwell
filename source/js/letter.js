@@ -16,11 +16,9 @@ class Letter {
 
     }); */
 
-    document.querySelector(".formHug").addEventListener("submit", handleSubmit);
-
     const handleSubmit = (e) => {
       e.preventDefault();
-
+      this.modalHugOverlay.classList.remove('modal--hide');
       let myForm = document.getElementById(".formHug");
       let formData = new FormData(myForm);
       fetch("/", {
@@ -31,6 +29,10 @@ class Letter {
         .then(() => console.log("Form successfully submitted"))
         .catch((error) => alert(error));
     };
+
+    document.querySelector(".formHug").addEventListener("submit", handleSubmit);
+
+    
 
   }
 
