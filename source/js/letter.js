@@ -33,8 +33,6 @@ class Letter {
 
     document.querySelector(".formHug").addEventListener("submit", handleSubmit);
 
-    
-
   }
 
   closeHug(){

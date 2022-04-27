@@ -50,7 +50,7 @@ class Password {
       modal.classList.add('modal--hide');
 
 
-      //Handles submit
+      //Handles Netlify
      let myForm = document.getElementById("form");
      let formData = new FormData(myForm);
   
