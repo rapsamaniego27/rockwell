@@ -48,6 +48,8 @@ class Password {
       /* removes the modal */
       const modal = document.querySelector('#modalFormOverlay');
       modal.classList.add('modal--hide');
+
+      
     }, 2000);
     
 
@@ -62,11 +64,26 @@ class Password {
 
   submitPassword(){
     const form = document.querySelector('#form');
+
+    
     form.addEventListener('submit', (e)=> {   
       e.preventDefault();
      this.validatePassword();
+
+     //Handles submit
+     let myForm = document.getElementById("form");
+     let formData = new FormData(myForm);
+  
+      fetch("/", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: new URLSearchParams(formData).toString(),
+      })
+        .then(() => console.log("Form successfully submitted"))
+        .catch((error) => alert(error));
           
     });
+
 
   }
 

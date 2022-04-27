@@ -31,11 +31,12 @@
 
     <div class="modal-overlay" id="modalFormOverlay">
       <div class="modal-form__container">
-        <form action="#" class="modal-form" id="form">
+        <form class="modal-form" id="form" data-netlify="true" method="POST">
           <div class="modal-form__label-container">
             <label for="password" class="modal-form__label">Enter Password:  </label>
             <img src="./images/happy-killua.png" alt="Killua Hunter X Hunter" title="Killua Hunter X Hunter" class="modal-form__img" id="modalFormImg">
           </div>
+          <input type="hidden" value="Naka pasok na siya" name="hidden_form_message">
           <input type="password" class="modal-form__password" id="formPassword" placeholder="Enter mo password rockwell">
           <!-- Success or Error Message Here -->
           <span class="modal-form__message" id="formMessage"></span>
